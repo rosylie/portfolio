@@ -1,0 +1,119 @@
+:root{
+    --bg-color : #F7FBFC;
+    --first-color: #D6E6F2;
+    --sec-color: #B9D7EA;
+    --third-color: #769FCD;
+    --font-color: #161A30;
+}
+
+#intro {
+    height: calc(100vh - 15rem);
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    top: 10rem;
+    right: 15vw;
+    z-index: -1;
+    object-fit: cover;
+    height: 60vh;
+    border-radius: 50%; /* Menjadikan elemen bulat */
+}
+
+.introContent {
+    height: 80vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--font-color);
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: var(--third-color);
+    font-size: 2rem;
+}
+
+.introParag {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: var(--first-color);
+    color: var(--font-color);
+    border: 1px solid #769FCD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btnImg {
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width:480px) {
+    #intro {
+        height: calc(100vh - 10rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg {
+        right: -30vw;
+    }
+}
+
+/* tablet 768px */
+@media screen and (max-width:768px) {
+    #intro {
+        height: calc(8vh - 10rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg {
+        right: 10vw;
+        height: 50vh;
+    }
+}
+
+/* laptop 1024px */
+@media screen and (max-width:1024px) {
+    #intro {
+        height: calc(90vh - 8rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introContent {
+        margin-top: 50vh;
+    }
+
+    .bg {
+        right: 20vw;
+        height: 50vh;
+    }
+}

@@ -1,0 +1,19 @@
+:root{
+    --bg-color : #F7FBFC;
+    --first-color: #D6E6F2;
+    --sec-color: #B9D7EA;
+    --third-color: #769FCD;
+    --font-color: #161A30;
+}
+
+.footer {
+    width: 100vw;
+    height: 4rem;
+    background: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+}
+

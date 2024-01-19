@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family:'Open Sans', sans-serif;
+}
+
+:root{
+    --bg-color : #F7FBFC;
+    --first-color: #D6E6F2;
+    --sec-color: #B9D7EA;
+    --third-color: #769FCD;
+    --font-color: #161A30;
+}
+
+body {
+    background: var(--bg-color);
+    color: #161A30;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
