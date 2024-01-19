@@ -102,7 +102,7 @@
 /* laptop 1024px */
 @media screen and (max-width:1024px) {
     #intro {
-        height: calc(90vh - 8rem);
+        height: calc(100vh - 8rem);
         display: flex;
         align-items: center;
         justify-content: center;
